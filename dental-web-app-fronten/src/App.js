@@ -1,12 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import EditProfile from './views/EditProfile';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        afggg
-      </header>
+      <Router>
+        <Routes>
+            <Route path='/' element={<EditProfile/>} />
+          </Routes>
+      </Router>
     </div>
   );
 }
