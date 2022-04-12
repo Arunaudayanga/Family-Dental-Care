@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import EditProfile from './views/EditProfile';
+//import Admin from "../views/adminPanel/adminPanel";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -10,7 +11,13 @@ function App() {
         <Routes>
             <Route path='/' element={<EditProfile/>} />
           </Routes>
+
+         
       </Router>
+
+
+      
+        
     </div>
   );
 }
