@@ -35,7 +35,9 @@ app.use("/payment", paymentRouter);
 const feedbackRouter = require("./routes/feedbackRoutes.js");
 app.use("/feedback", feedbackRouter);
 
-
+//import appointment route
+const appointmentRouter = require("./routes/appointmentRoutes.js");
+app.use("/appointment", appointmentRouter);
 
 app.listen(PORT,() =>{
     console.log(`server is up and running on port number: ${PORT}`)
