@@ -31,6 +31,11 @@ connection.once("open", ()=> {
 const paymentRouter = require("./routes/paymentRoutes.js");
 app.use("/payment", paymentRouter);
 
+//Import feedback route
+const feedbackRouter = require("./routes/feedbackRoutes.js");
+app.use("/feedback", feedbackRouter);
+
+
 
 app.listen(PORT,() =>{
     console.log(`server is up and running on port number: ${PORT}`)
