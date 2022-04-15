@@ -1,10 +1,12 @@
 .social-container {
-    background: #eee;
-    padding: 25px 50px;
+    
+    padding: 0 50px;
   }
   h4{
     font-family:Courier
   }
+
+  
 
   a.social {
     margin: 0 1rem;
@@ -17,17 +19,17 @@
   }
 
   a.youtube {
-    color: #eb3223;
+    color:gray;
   }
   
   a.facebook {
-    color: #4968ad;
+    color: gray;
   }
   
   a.twitter {
-    color: #49a1eb;
+    color: gray;
   }
   
   a.instagram {
-    color: black;
+    color: gray;
   }
