@@ -53,8 +53,8 @@ router.route("/").get((req,res)=>{
 
 router.route("/update/:id").put(async(req,res)=>{
     const id =req.params.id;
-   // console.log("paymentID",id);
-   // console.log("dataaa", req.body);
+    console.log("paymentID",id);
+   console.log("dataaa", req.body);
     const{paymentId,patientName,paymentType,diagnosis,hospitalCharge,doctorFee,entryDate,Amount,appointmentID} = req.body;
     
     const updatePayment ={

@@ -1,4 +1,4 @@
-/*const cardDetails = [
+const cardDetails = [
     {
         id : 1,
         img : "https://thumbs.dreamstime.com/z/income-expense-choice-showing-strategy-change-dilemmas-40816503.jpg",
@@ -48,4 +48,4 @@
         navigate : "/Feedback"
     }
 ];
-export default cardDetails;*/
+export default cardDetails;
