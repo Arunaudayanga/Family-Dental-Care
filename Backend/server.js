@@ -39,6 +39,9 @@ app.use("/feedback", feedbackRouter);
 const appointmentRouter = require("./routes/appointmentRoutes.js");
 app.use("/appointment", appointmentRouter);
 
+const doctorRouter = require("./routes/DoctorRoutes.js");
+app.use("/Doctor", doctorRouter);
+
 app.listen(PORT,() =>{
     console.log(`server is up and running on port number: ${PORT}`)
 })

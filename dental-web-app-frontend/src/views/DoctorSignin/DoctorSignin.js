@@ -1,9 +1,12 @@
-import React from "react";
+import React,{ useState } from "react";
 import Navbar from "../../components/NavBar/Navbar";
 import FooterS from "../../components/Footer/Footer";
 import "./DoctorSignin.css";
+import { Link } from "react-router-dom";
 
 function SignIn() {
+    const[email, setEmail]= useState("");
+    const[password, setPassword]= useState("");
   return (
 
     
@@ -33,7 +36,7 @@ function SignIn() {
                     <label>Email:</label>
                   </td>
                   <td>
-                    <input type="text" name="Email" />
+                    <input type="text" name="Email" onChange={(e)=>{setEmail(e.target.value);}} />
                   </td>
                 </tr>
                 <tr>
@@ -49,7 +52,9 @@ function SignIn() {
               </table>
               <a href ="#" id ="ForgotPassword"> Forgot Password?</a>
               <br/>
-              <input type="submit" value="Login" />
+              <Link to={`/DoctorProfile/${email}`}>
+              <input type="submit" value="Login" id ="DoctorSigninLogin" />
+              </Link>
             </form>
             </div>
 

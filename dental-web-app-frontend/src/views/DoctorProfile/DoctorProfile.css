@@ -2,10 +2,11 @@
 *{
   font-family: 'Roboto', sans-serif;
 }
-table {
+
+#DoctorProfileTbl {
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 2em;
+
   }
 
  h1{
@@ -24,15 +25,22 @@ table {
     margin: 0 1.5em 0 1.5em;
   }
 
-  .lable{
+  label{
     text-align: left;
     font-size: 1.3em;
     font-weight: 400;
 
   }
 
+  td.label{
+    border: 2px solid black;
+    padding: 0.1em 4em 0.1em 0;
+    background-color: rgb(223, 223, 223);
+  }
+
   td{
-    padding: 0.5em 0 0.5em 3em;
+    padding: 0.5em 4em 0.5em 0;
+    
   }
 
   input[type=text]{
@@ -40,17 +48,22 @@ table {
     height: 2.5em;
     background-color: rgb(223, 223, 223);
   }
-  input[type=password]{
-    width: 25em;
-    height: 2.5em;
-    background-color: rgb(223, 223, 223);
 
+  #editBtn{
+    margin: 2.5em 4em 8em 0;
+    padding: 0.6em 1em 0.6em 1em;
+    background-color: rgb(22, 172, 59);
+    border-style: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
   }
 
-  input[type=submit]{
+  #deleteBtn{
     margin: 2.5em 0 8em 0;
-    padding: 0.6em 5em 0.6em 5em;
-    background-color: rgb(34, 146, 221);
+    padding: 0.6em 1em 0.6em 1em;
+    background-color: rgb(230, 8, 8);
     border-style: none;
     border-radius: 10px;
     color: white;
@@ -59,7 +72,6 @@ table {
   }
 
 
- 
   footer{
     bottom: 0;
     position: absolute;
