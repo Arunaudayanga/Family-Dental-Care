@@ -19,7 +19,7 @@ function Navbar() {
           <NavLink to='/MyAccount' >
             My Account
           </NavLink>
-          <NavLink to='/AdminPanel' >
+          <NavLink to='/AdminSignin' >
             Admin Panel
           </NavLink>
 

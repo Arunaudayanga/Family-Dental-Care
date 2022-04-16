@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../../components/NavBar/Navbar";
 import FooterS from "../../components/Footer/Footer";
-import Select from 'react-select';
+//import Select from 'react-select';
 
 import "./AddDoctor.css";
 
@@ -121,7 +121,7 @@ export default class AddDoctor extends React.Component {
 
     
    
-}
+  }
 
 
   

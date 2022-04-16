@@ -1,0 +1,17 @@
+.searche{
+    margin: 5% 40px ;
+  
+  }
+  .paycontainer{
+    border-radius: 20px;
+    background-color: #f5f5f5;
+    /*background-image: ".public/image/payimage.jpg";*/
+    padding: 100px;
+    margin-top: 5px;
+    width: 1300px;
+}
+  
+  .allpayment{
+    margin: 4% 8% 0 10%;
+  }
+  
