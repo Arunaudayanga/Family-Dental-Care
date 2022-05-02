@@ -8,7 +8,7 @@ router.route("/add").post((req,res)=>{
     const diagnosis = req.body.diagnosis;
     const dentist_name = req.body.dentist_name;
     const rating = Number(req.body.rating);
-    const feedback_description = (req.body.feedback);
+    const feedback_description = (req.body.feedback_description);
 
     const newfeedback = new feedback({
 

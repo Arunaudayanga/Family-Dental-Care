@@ -8,6 +8,10 @@ function Navbar() {
         
   
         <NavMenu>
+
+        <NavLink to='/Home'>
+            Home
+          </NavLink>
         
           <NavLink to='/AboutUs'>
             About US

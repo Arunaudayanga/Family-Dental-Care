@@ -1,12 +1,12 @@
 import React from "react";
-import "./AdminPanel.css";
+import "./Home.css";
 import Card from "../../components/Card/Card";
 import cardDetails from "../../components/Card/cardDetails";
 
-function Admin() {
+function Home() {
   return (
     <div className="admin-home">
-      <div class="heading">Admin Panel</div>
+      <div class="heading">Home</div>
       {cardDetails.map((cardDetails) => {
         return (
           <div>
@@ -22,6 +22,4 @@ function Admin() {
     </div>
   );
 }
-export default Admin;
-
-
+export default Home;
