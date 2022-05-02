@@ -1,4 +1,4 @@
-/*import React from "react";
+import React from "react";
 import "./Card.css";
 import {Link} from 'react-router-dom';
 
@@ -14,4 +14,4 @@ function Card(props){
 
     );
 }
-export default Card;*/
+export default Card;

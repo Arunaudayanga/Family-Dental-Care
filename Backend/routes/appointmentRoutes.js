@@ -39,12 +39,13 @@ router.route("/").get((req,res)=>{
 
 router.route("/update/:id").put(async (req,res) => {
     let userId = req.params.id;
-    const {appointment_id, patient_name, diagnosis, phone, appointment_date, appointment_time} =req.body;
+    const { appointment_id, patient_name, diagnosis, dentist_name, phone, appointment_date, appointment_time} =req.body;
 
     const updateappointment = {
         appointment_id,
         patient_name,
         diagnosis,
+        dentist_name,
         phone,
         appointment_date,
         appointment_time
