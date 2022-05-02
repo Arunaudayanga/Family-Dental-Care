@@ -107,7 +107,7 @@ import "./Allpayment.css";
 };
 
     return(
-
+      
       <><div className="allpayment">
       <input className="searche"
       style={{ width:"15%" ,height:"25px"}}
@@ -116,7 +116,7 @@ import "./Allpayment.css";
       onChange={(e) => setSearchName(e.target.value)}/>
       </div>
 
-        <div className="paycontainer">
+        <div className="paycontainr">
           
             <h1>All Payment Details</h1>
             <table  id="my-table" class="table">
@@ -143,7 +143,7 @@ import "./Allpayment.css";
                             if (searchName === "") {
                                 return value;
                             } else if (
-                                value.service_type.includes(searchName.toUpperCase())
+                                value.diagnosis.includes(searchName.toUpperCase())
                             ){
                                 return value;
                             }
@@ -164,12 +164,12 @@ import "./Allpayment.css";
         
             
           
-            <a href={`/EditPayment/${payments.paymentId}`} >EDIT</a>
+            <a href={`/EditPayment/${payments.paymentId}`} > <button type="submit" class="btn btn-primary" id= "editBtn">Edit</button></a>
             &nbsp;
            
            
                 
-            <Link to="#" className="btn btn-danger btn-sm"onClick={() => {if (window.confirm('Are you sure you wish to delete this record?')) deletePayment(payments._id)}} >DELETE</Link>
+            <  button type="button"  className="btn btn-danger btn-sm"onClick={() => {if (window.confirm('Are you sure you wish to delete this record?')) deletePayment(payments._id)}} id="deleteBtn" >DELETE</button> 
           </tr>
         
         
@@ -177,11 +177,11 @@ import "./Allpayment.css";
 
        </table>
 
-        <Link to="/AddPayment" className="btn btn-success btn-sm">ADD PAYMENT</Link>
+       <  button type="button"   className="btn btn-success btn-sm" id="addBtn"><Link to={ "/AddPayment"}> ADD PAYMENT  </Link></button> 
         &nbsp;
        
      
-       <button type="button" class="btn btn-danger btn-sm" onClick={() => createPdf()} >Download PDF</button>
+       <button type="button" class="btn btn-danger btn-sm" onClick={() => createPdf()}  >Download PDF</button>
     </div>
     </>
     )
