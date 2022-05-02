@@ -115,7 +115,7 @@ export default function AddPayment() {
         <br></br>
         <div className="form-group">
         <label for="doctorFee">Doctor Fee</label>
-        <input type="text" class="form-control" id="doctorFee" placeholder="Enter Doctor Fee"
+        <input required={true} type="text" class="form-control" id="doctorFee" placeholder="Enter Doctor Fee"
         onChange={(e)=>{
           setDoctorFee(e.target.value);
           calCulateAmount();
@@ -127,7 +127,7 @@ export default function AddPayment() {
 
         <div className="form-group">
         <label for="entryDate">Entry Date</label>
-        <input type="text" class="form-control" id="entryDate" placeholder="Enter Entry Date"
+        <input required={true} type="text" class="form-control" id="entryDate" placeholder="Enter Entry Date"
         onChange={(e)=>{
           setDate(e.target.value);
         }} />
@@ -145,7 +145,7 @@ export default function AddPayment() {
         </div>
 
         <br></br>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary" id="subBtn">Submit</button>
           
         
       </form>

@@ -22,7 +22,7 @@ function EditPayment() {
 
 //retrieve relevent data form relavent fields
 
-//const [expense, setExpense] = useState("");
+const [payment, setPayment] = useState("");
 
 const {id} = useParams();
 
@@ -34,7 +34,7 @@ useEffect(() => {
 
       .then((res) => {
 
-       // setExpense(res.data);
+        setPayment(res.data);
 
         console.log(res.data);
         setPaymentID(res.data.pay.paymentId);
@@ -72,7 +72,7 @@ function calCulateAmount(){
     var DOctorFee= parseInt(document.getElementById("doctorFee").value);
   document.getElementById("Amount").value = hospitalCharge+DOctorFee;
   console.log( hospitalCharge+DOctorFee);
-  Amount = hospitalCharge+DOctorFee;
+  //Amount = hospitalCharge+DOctorFee;
   
 
 }
@@ -81,15 +81,13 @@ function sendUpdatePayment(e){
     e.preventDefault();//prevent submit event default behaviour
   
     const updatePayment = {
-
+      
       paymentId,
       patientName,
       paymentType,
       diagnosis,
-   
       doctorFee,
       entryDate,
-      
       Amount
     }
   
@@ -119,7 +117,17 @@ function sendUpdatePayment(e){
       <h1>Edit Payment</h1>
     <form onSubmit={sendUpdatePayment}>
 
-    
+
+  
+
+    <div className="form-group">
+  <label for="paymentId">Payment ID</label>
+  <input type="text" class="form-control" id="paymentID" value={paymentId} placeholder="Enter Payment ID"
+  onChange={(e)=>{
+    setPaymentID(e.target.value);
+  }} />
+
+  </div>
 
       <div className="form-group">
 
@@ -131,6 +139,7 @@ function sendUpdatePayment(e){
   }} />
 
   </div>
+  <br></br>
 
   <div className="form-group">
   <label for="paymentType">Payment Type</label>
@@ -140,6 +149,7 @@ function sendUpdatePayment(e){
   }} />
 
   </div>
+  <br></br>
 
  
 
@@ -151,7 +161,7 @@ function sendUpdatePayment(e){
   }} />
   
   </div>
-
+  <br></br>
   <div className="form-group">
   <label for="doctorFee">Doctor Fee</label>
   <input type="text" class="form-control" id="doctorFee" value={doctorFee} placeholder="Enter Doctor Fee"
@@ -162,7 +172,7 @@ function sendUpdatePayment(e){
   
   </div>
 
-
+  <br></br>
   <div className="form-group">
   <label for="entryDate">Entry Date</label>
   <input type="text" class="form-control" id="entryDate" value={entryDate} placeholder="Enter Date"
@@ -171,7 +181,7 @@ function sendUpdatePayment(e){
   }} />
   
   </div>
-
+  <br></br>
   <div className="form-group">
   <label for="Amount">Amount</label>
   <input type="text" class="form-control" id="Amount" placeholder="Enter the Amount"
@@ -180,7 +190,7 @@ function sendUpdatePayment(e){
   }} />
   
   </div>
-
+  <br></br>
   
   <button type="submit" className="btn btn-success">  Update</button>
   &nbsp;
