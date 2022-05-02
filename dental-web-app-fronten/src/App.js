@@ -9,6 +9,9 @@ import Payment from './views/Payment/Payment';
 import AddPayment from './views/Payment/AddPayment';
 import EditPayment from './views/Payment/EditPayment';
 //import AddPayment from "../views/Payment/AddPayment";
+import Feedback from './views/Feedback/Feedback';
+import AddFeedback from './views/Feedback/AddFeedback';
+import EditFeedback from './views/Feedback/EditFeedback';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -45,6 +48,17 @@ function App() {
             <Route path='/EditPayment/:id' element={<EditPayment/>} />
           </Routes>
          
+          <Routes>
+            <Route path='/Feedback' element={<Feedback/>} />
+          </Routes>
+
+          <Routes>
+            <Route path='/AddFeedback' element={<AddFeedback/>} />
+          </Routes>
+
+          <Routes>
+            <Route path='/EditFeedback/:id' element={<EditFeedback/>} />
+          </Routes>
          
 
       </Router>
