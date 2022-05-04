@@ -163,7 +163,7 @@ export default class AddDoctor extends React.Component {
                         </tr>
                       </table>
                       
-                      <input type="submit" id ="AddDoctorSubmitBtn"  value="Save Changes" />
+                      <input type="submit" id ="AddDoctorSubmitBtn"  value=" Submit " />
                       
                     </form>
                     </div>

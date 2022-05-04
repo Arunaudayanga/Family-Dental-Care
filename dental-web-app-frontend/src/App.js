@@ -3,7 +3,7 @@ import './App.css';
 import EditProfile from './views/Editprofile/EditProfile';
 import AddDoctor from './views/AddDoctor/AddDoctor';
 import DoctorSignin from './views/DoctorSignin/DoctorSignin';
-import Admin from "./views/adminPanel/adminPanel";
+import AdminPanel from "./views/AdminPanel/adminPanel";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import DoctorProfile from './views/DoctorProfile/DoctorProfile';
 
@@ -22,6 +22,9 @@ function App() {
           </Routes>
           <Routes>
             <Route path='/DoctorProfile/:id' element={<DoctorProfile/>} />
+          </Routes>
+          <Routes>
+            <Route path='/AdminPanel' element={<AdminPanel/>} />
           </Routes>
           
          

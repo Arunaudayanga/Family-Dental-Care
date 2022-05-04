@@ -14,6 +14,7 @@ function DoctorProfile() {
     const[email, setEmail]= useState("");
     const[phone, setPhone]= useState("");
     const[password, setPassword]= useState("");
+    const[Oid,setOId]=useState("");
   
 
 const {id} = useParams();
@@ -34,6 +35,7 @@ const {id} = useParams();
       
               setDocGender(res.data.doctor.gender);
       
+              setOId(res.data.doctor._id);
             
               setEmail(res.data.doctor.email);
       
@@ -54,6 +56,18 @@ const {id} = useParams();
         getDoctor();
       
       }, []);
+
+      function deleteDoctor(e){
+        axios.delete("http://localhost:8070/Doctor/delete/"+Oid).then((res)=>{
+            console.log(res.data);
+            alert("Delete Successfully");
+
+        }).catch((err)=>{
+            alert(err)
+        });
+        
+
+    }
   return (
 
     
@@ -124,8 +138,10 @@ const {id} = useParams();
               <Link to={`/editDoctor/${doctor_id}`}>
               <button id="editBtn" >Edit Profile</button>
               </Link>
-              <button id="deleteBtn" >Delete Profile</button>
 
+                <Link to={"/"}>
+              <button id="deleteBtn" onClick={deleteDoctor} >Delete Profile</button>
+                </Link>
             </form>
             
 

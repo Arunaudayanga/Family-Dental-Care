@@ -73,4 +73,17 @@ const update = await doctor.findByIdAndUpdate(id,updateDoctor)
 })
 })
 
+router.route("/delete/:id").delete(async (req,res) => {
+    let userId = req.params.id;
+
+    await doctor.findByIdAndDelete(userId)
+    .then(() => {
+        res.status(200).send({status: "Doctor delete"});
+    }).catch(() => {
+        console.log(err.message);
+        res.status(500).send({status: "Error with delete Doctor", error: err.message})
+    })
+
+})
+
 module.exports = router;

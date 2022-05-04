@@ -4,7 +4,7 @@ import axios from "axios";
 import Navbar from "../../components/NavBar/Navbar";
 import FooterS from "../../components/Footer/Footer";
 import   "./EditProfile.css";
-import logo from '../../../src/DPBK4896.png'; 
+//import logo from '../../../src/DPBK4896.png'; 
 
 function EditProfile() {
   const[doctor_id, setDoctorID]= useState("");
@@ -100,11 +100,9 @@ const {id} = useParams();
 
           </div>
 
-          <div className="container">
-          <div className="container-child" id="Pic">
-          <img id="profilePic" src={logo} alt="MyBurger"/>
-          </div>
-          <div className="container-child">
+          
+          
+          <div>
             <form onSubmit={updateDoctor}>
               <table>
                 <tr>
@@ -143,7 +141,7 @@ const {id} = useParams();
               <input type="submit" value="Save Changes" />
             </form>
             </div>
-          </div>
+          
 
         </div>
       </fieldset>
