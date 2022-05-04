@@ -8,6 +8,10 @@ function Navbar() {
         
   
         <NavMenu>
+
+        <NavLink to='/Home'>
+             Home
+          </NavLink>
         
           <NavLink to='/AboutUs'>
             About US
@@ -19,11 +23,9 @@ function Navbar() {
           <NavLink to='/MyAccount' >
             My Account
           </NavLink>
-          <NavLink to='/AdminSignin' >
+          <NavLink to='/AdminPanel' >
             Admin Panel
           </NavLink>
-
-        
 
           
         </NavMenu>

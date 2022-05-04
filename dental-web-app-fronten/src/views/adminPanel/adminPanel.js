@@ -1,5 +1,5 @@
 import React from "react";
-import "./AdminPanel.css";
+import "./adminPanel.css";
 import Card from "../../components/Card/Card";
 import cardDetails from "../../components/Card/cardDetails";
 

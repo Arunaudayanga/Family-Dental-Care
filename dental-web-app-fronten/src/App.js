@@ -4,7 +4,7 @@ import EditProfile from './views/Editprofile/EditProfile';
 import AddDoctor from './views/AddDoctor/AddDoctor';
 import DoctorSignin from './views/DoctorSignin/DoctorSignin';
 import AdminSignin from './views/AdminSignin/AdminSignin';
-import AdminPanel from './views/AdminPanel/AdminPanel';
+import AdminPanel from './views/adminPanel/adminPanel';
 import Payment from './views/Payment/Payment';
 import AddPayment from './views/Payment/AddPayment';
 import EditPayment from './views/Payment/EditPayment';
