@@ -39,11 +39,32 @@ export default class AddDoctor extends React.Component {
       console.log(e.target.name);
     }
 
+    validateForm = (e) =>{
+      var msg = "";
+      if(this.state.doctor_id == ""){
+        msg = "Doctor Id Cannot be Empty"
+      }else if(this.state.doctor_name == ""){
+        msg = "Doctor Name Cannot be Empty"
+      }else if(this.state.gender == ""){
+        msg = "Gender Cannot be Empty"
+      }else if(this.state.email == ""){
+        msg = "Doctor Email Cannot be Empty"
+      }else if(this.state.phone == 0){
+        msg = "Doctor Phone number Cannot be Empty"
+      }else if(isNaN(this.state.phone)){
+        msg = "Phone Number must be a Number"
+      }else if(this.state.password == ""){
+        msg = "Doctor Password Cannot be Empty"
+      }
+      return msg;
+    }
 
   onSubmit = (e) => {
     e.preventDefault();
 
-    const {  doctor_id, doctor_name, gender, email, phone, password} = this.state;
+    var errorMsg = this.validateForm();
+    if(errorMsg == ""){
+      const {  doctor_id, doctor_name, gender, email, phone, password} = this.state;
 
     const data = {
       doctor_id: doctor_id,
@@ -73,6 +94,12 @@ export default class AddDoctor extends React.Component {
         
       }
     })
+    }else{
+      alert(errorMsg);
+      
+    }
+
+    
   }
      
   
@@ -163,7 +190,9 @@ export default class AddDoctor extends React.Component {
                         </tr>
                       </table>
                       
-                      <input type="submit" id ="AddDoctorSubmitBtn"  value=" Submit " />
+                      <input type="submit" className="docSub" id ="AddDoctorSubmitBtn"  value=" Submit " />
+                      
+                      <button id="doctorListBtn"  className="docList"><a href="/DoctorList">Doctor List</a></button> 
                       
                     </form>
                     </div>
@@ -171,9 +200,7 @@ export default class AddDoctor extends React.Component {
           
                   </div>
                 </fieldset>
-                <footer>
-                <FooterS/>
-                </footer>
+                
               </div>
              
             );
@@ -186,5 +213,7 @@ export default class AddDoctor extends React.Component {
    
 }
 
+
+  
 
   
