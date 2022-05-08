@@ -1,23 +1,12 @@
 import React from "react";
-<<<<<<< Updated upstream
-
-
-
-import "./AdminPanel.css";
+import "./Home.css";
 import Card from "../../components/Card/Card";
 import cardDetails from "../../components/Card/cardDetails";
-//import { Link } from "react-router-dom";
-
-=======
-import "./AdminPanel.css";
-import Card from "../../components/Card/Card";
-import cardDetails from "../../components/Card/cardDetails";
->>>>>>> Stashed changes
 
 function Admin() {
   return (
     <div className="admin-home">
-      <div class="heading">Admin Panel</div>
+      <div class="heading">Home</div>
       {cardDetails.map((cardDetails) => {
         return (
           <div>
