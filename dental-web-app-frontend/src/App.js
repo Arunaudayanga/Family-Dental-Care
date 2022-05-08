@@ -29,6 +29,8 @@ import DoctorProfile from './views/DoctorProfile/DoctorProfile';
 import Feedback from './views/Feedback/Feedback';
 import AddFeedback from './views/Feedback/AddFeedback';
 import EditFeedback from './views/Feedback/EditFeedback';
+import WelcomePage from './views/Welcome/Welcome';
+import DoctorList from './views/DoctorList/DoctorList';
 //import AdminPanel from './views/AdminPanel/AdminPanel';
 
 
@@ -79,6 +81,10 @@ function App() {
             <Route path='/AdminSignin' element={<AdminSignin/>} />
           </Routes>
           
+          
+          <Routes>
+            <Route path='/DoctorSignin' element={<DoctorSignin/>} />
+          </Routes>
           <Routes>
             <Route path='/Payment' element={<Payment/>} />
           </Routes>
@@ -101,9 +107,14 @@ function App() {
           <Routes>
             <Route path='/EditAppointment/:id' element={<EditAppointment/>} />
           </Routes>
+          <Routes>
+            <Route path='/welcome' element={<WelcomePage/>} />
+          </Routes>
          
-         
-
+ 
+          <Routes>
+            <Route path='/DoctorList' element={<DoctorList/>} />
+          </Routes>
          
       </Router>
 

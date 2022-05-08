@@ -31,7 +31,7 @@ const cardDetails = [
 
         img : "https://th.bing.com/th/id/OIP.kACRQ0QDS7qQkReRqo3RtgHaE8?pid=ImgDet&rs=1",
         name : "DOCTORS",
-        navigate : "/Doctor"
+        navigate : "/AddDoctor"
     },
     {
         id : 4,
