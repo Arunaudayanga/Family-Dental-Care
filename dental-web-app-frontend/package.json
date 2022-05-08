@@ -12,10 +12,8 @@
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.26.1",
-<<<<<<< Updated upstream
+
     "bootstrap": "^5.1.3",
-=======
->>>>>>> Stashed changes
     "jspdf": "^2.5.1",
     "jspdf-autotable": "^3.5.23",
     "react": "^17.0.2",
