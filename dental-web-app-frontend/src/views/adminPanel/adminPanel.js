@@ -1,14 +1,12 @@
 import React from "react";
-<<<<<<< Updated upstream
-import "./adminPanel.css";
-import Card from "../../components/Card/Card";
-import cardDetails from "../../components/Card/cardDetails";
-=======
+
+
+
 import "./AdminPanel.css";
 import Card from "../../components/Card/Card";
 import cardDetails from "../../components/Card/cardDetails";
 //import { Link } from "react-router-dom";
->>>>>>> Stashed changes
+
 
 function Admin() {
   return (
