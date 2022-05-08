@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< Updated upstream
 
 
 
@@ -6,11 +7,16 @@ import React from "react";
 
 
 
+=======
+>>>>>>> Stashed changes
 import "./AdminPanel.css";
 import Card from "../../components/Card/Card";
 import cardDetails from "../../components/Card/cardDetails";
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 function Admin() {
   return (
     <div className="admin-home">

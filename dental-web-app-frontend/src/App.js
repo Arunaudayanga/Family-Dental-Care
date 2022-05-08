@@ -3,6 +3,7 @@ import './App.css';
 import EditProfile from './views/Editprofile/EditProfile';
 import AddDoctor from './views/AddDoctor/AddDoctor';
 import DoctorSignin from './views/DoctorSignin/DoctorSignin';
+<<<<<<< Updated upstream
 
 
 //import AdminPanel from "./views/AdminPanel/adminPanel";
@@ -25,6 +26,19 @@ import AddAppointment from './views/Appointment/AddAppointment';
 import EditAppointment from './views/Appointment/EditAppointment';
 import Home from './views/Home/Home';
  
+=======
+import Admin from "./views/AdminPanel/AdminPanel";
+import AdminPanel from './views/AdminPanel/AdminPanel';
+import Home from './views/Home/Home';
+//import WelcomePage from './views/Welcome/Welcome';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import DoctorProfile from './views/DoctorProfile/DoctorProfile';
+import Feedback from './views/Feedback/Feedback';
+import AddFeedback from './views/Feedback/AddFeedback';
+import EditFeedback from './views/Feedback/EditFeedback';
+//import AdminPanel from './views/AdminPanel/AdminPanel';
+
+>>>>>>> Stashed changes
 
 function App() {
   return (
@@ -42,12 +56,36 @@ function App() {
           <Routes>
             <Route path='/DoctorProfile/:id' element={<DoctorProfile/>} />
           </Routes>
+<<<<<<< Updated upstream
 
          
           
           <Routes>
             <Route path='/AdminPanel' element={<AdminPanel/>} />
           </Routes>
+=======
+          <Routes>
+            <Route path='/AdminPanel' element={<AdminPanel/>} />
+          </Routes>
+
+          <Routes>
+            <Route path='/Home' element={<Home/>} />
+          </Routes>
+
+          <Routes>
+            <Route path='/Feedback' element={<Feedback/>} />
+          </Routes>
+
+          <Routes>
+            <Route path='/AddFeedback' element={<AddFeedback/>} />
+          </Routes>
+
+          <Routes>
+            <Route path='/EditFeedback/:id' element={<EditFeedback/>} />
+          </Routes>
+
+          
+>>>>>>> Stashed changes
           
          
           <Routes>
