@@ -3,7 +3,11 @@ import "./Home.css";
 import Card from "../../components/Card/Card";
 import cardDetails from "../../components/Card/cardDetails";
 
+<<<<<<< Updated upstream
 function Admin() {
+=======
+function Home() {
+>>>>>>> Stashed changes
   return (
     <div className="admin-home">
       <div class="heading">Home</div>
@@ -22,4 +26,8 @@ function Admin() {
     </div>
   );
 }
+<<<<<<< Updated upstream
 export default Admin;
+=======
+export default Home;
+>>>>>>> Stashed changes
