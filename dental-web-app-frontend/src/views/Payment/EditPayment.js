@@ -117,10 +117,9 @@ function sendUpdatePayment(e){
   return (
  
     <div className="paycontainer">
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+      <br/>
+      
+      
       <h1>Edit Payment</h1>
     <form onSubmit={sendUpdatePayment}>
 

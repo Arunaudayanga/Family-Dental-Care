@@ -58,8 +58,8 @@ export default function AddPayment() {
   return (
      
     <div className="paycontainer">
-      <br></br>
-      <br></br>
+      <br/>
+      
       
       <h1>Add New Payment</h1>
     <form onSubmit={sendData}>
@@ -71,7 +71,7 @@ export default function AddPayment() {
         }} />
 
         </div>
-        <br></br>
+        <br/>
         
   
       <div className="form-group">
