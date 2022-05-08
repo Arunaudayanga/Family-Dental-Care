@@ -101,7 +101,7 @@ export default function Payment() {
 
 
     return (
-        <><div className ="appointmentBody">
+        <div><div className ="appointmentBody">
            
             
         </div><div className ="container">
@@ -174,6 +174,6 @@ export default function Payment() {
        &nbsp;
        <button type="button" class="btn btn-danger btn-sm" onClick={() => createPdf()}><PictureAsPdIcon/>Download PDF</button>
 
-    </div> </>
+    </div> </div>
     )
 }

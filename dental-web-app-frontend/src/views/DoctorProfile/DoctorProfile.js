@@ -75,7 +75,7 @@ const {id} = useParams();
       <head>
       
       </head>
-      <Navbar />
+      
       <div>
         <h1> Family Dental Care</h1>
       </div>

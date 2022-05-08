@@ -91,7 +91,7 @@ export default class AddDoctor extends React.Component {
             return (
           
               <div className="expenseBody">
-                <Navbar />
+                
                 <div>
                   <h1> Family Dental Care</h1>
                 </div>
