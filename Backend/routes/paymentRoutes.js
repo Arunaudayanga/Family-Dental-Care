@@ -69,7 +69,7 @@ router.route("/update/:id").put(async(req,res)=>{
         appointmentID
     }
     
-const update = await payment.findByIdAndUpdate(id,updatePayment)
+const update = await payment.findOneAndUpdate({paymentId:id},updatePayment)
 .then(()=>{
     res.status(200).send({status: "Updated"})
 }).catch((err)=>{

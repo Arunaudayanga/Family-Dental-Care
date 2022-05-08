@@ -4,15 +4,15 @@ const Schema = mongoose.Schema;
 
 const paymentSchema = new Schema ({
    
-   paymentId: String,
-   patientName: String,
-   paymentType: String,
-   diagnosis:String,
-   hospitalCharge:Number,
-   doctorFee:Number,
-   entryDate:Date,
-   Amount:Number,
-   appointmentID: String
+   paymentId: {type: String},
+   patientName: {type:String},
+   paymentType: {type:String},
+   diagnosis:{type:String},
+   hospitalCharge:{type:Number},
+   doctorFee:{type:Number},
+   entryDate:{type:Date},
+   Amount:{type:Number},
+   appointmentID: {type:String}
     
      
 
