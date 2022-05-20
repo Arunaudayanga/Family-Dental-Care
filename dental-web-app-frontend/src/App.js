@@ -30,6 +30,7 @@ import Feedback from './views/Feedback/Feedback';
 import AddFeedback from './views/Feedback/AddFeedback';
 import EditFeedback from './views/Feedback/EditFeedback';
 import WelcomePage from './views/Welcome/Welcome';
+import AboutUs from './views/AboutUs/AboutUs';
 import DoctorList from './views/DoctorList/DoctorList';
 //import AdminPanel from './views/AdminPanel/AdminPanel';
 
@@ -115,7 +116,10 @@ function App() {
           <Routes>
             <Route path='/DoctorList' element={<DoctorList/>} />
           </Routes>
-         
+          
+          <Routes>
+            <Route path='/AboutUs' element={<AboutUs/>} />
+          </Routes>
       </Router>
 
 

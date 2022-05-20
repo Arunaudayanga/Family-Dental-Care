@@ -26,6 +26,7 @@ function Navbar() {
           <NavLink to='/AdminSignin' >
             Admin Panel
           </NavLink>
+        
 
           
         </NavMenu>
