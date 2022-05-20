@@ -2,6 +2,8 @@ import React,{useState, useEffect} from "react";
 import axios from "axios";
 import {Link} from 'react-router-dom';
 import jsPDF from "jspdf";
+import Navbar from "../../components/NavBar/Navbar";
+import Footer from "../../components/Footer/Footer";
 import autoTable from "jspdf-autotable";
 import "./Payment.css";
 import DeleteIcon from "@material-ui/icons/Delete";
@@ -94,7 +96,7 @@ export default function Payment() {
             doc.putTotalPages(totalPagesExp);
         }
 
-        doc.save('appointment.pdf'); //this downloads a copy of the pdf in your local instance.
+        doc.save('payment.pdf'); //this downloads a copy of the pdf in your local instance.
     };
 
 
@@ -103,7 +105,7 @@ export default function Payment() {
     return (
         <div><div className ="appointmentBody">
            
-            
+           <Navbar />
         </div><div className ="container">
         <h1>All Payments</h1>
         <input className="searchappointment"
@@ -159,7 +161,7 @@ export default function Payment() {
 
                     <Link to={`/EditPayment/${payments.paymentId}`} class="btn btn-success btn-sm"><EditIcon/>Update</Link>
                     &nbsp;
-                    <button type="button" class="btn btn-danger btn-sm" onClick={() => {if (window.confirm('Are you sure you wish to delete this record?')) deletePayment(payments._id)}} ><DeleteIcon/>Delete
+                    <button type="button" class="btn btn-danger btn-sm" id="Debtn" onClick={() => {if (window.confirm('Are you sure you wish to delete this record?')) deletePayment(payments._id)}} ><DeleteIcon/>Delete
                     </button>
                     
                 
@@ -172,8 +174,9 @@ export default function Payment() {
        <Link to={"/AddPayment"} className="btn btn-success btn-sm"><AddCircleIcon/>Add New Payment
        </Link> 
        &nbsp;
-       <button type="button" class="btn btn-danger btn-sm" onClick={() => createPdf()}><PictureAsPdIcon/>Download PDF</button>
-
+       <button type="button" class="btn btn-danger btn-sm" id="Pdfbtn" onClick={() => createPdf()}><PictureAsPdIcon/>Download PDF</button>
+       
+     
     </div> </div>
     )
 }

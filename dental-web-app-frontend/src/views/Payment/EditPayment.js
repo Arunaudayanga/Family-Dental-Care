@@ -3,7 +3,7 @@ import React,{ useState, useEffect } from "react";
 import axios from "axios";
 
 import {useParams} from "react-router";
-
+import "./Payment.css";
 import { Link } from "react-router-dom";
 
 
@@ -200,7 +200,7 @@ function sendUpdatePayment(e){
   </div>
   <br></br>
   
-  <button type="submit" className="btn btn-success">  Update</button>
+  <button type="submit" className="btn btn-success" id="Subbtn">  Update</button>
   &nbsp;
   <Link to="/Payment">
 

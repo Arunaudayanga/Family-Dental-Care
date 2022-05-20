@@ -25,32 +25,62 @@
     height: 500px; 
 }
 
-#patient_name{
+#paymentId{
     position: relative;
-    left: 37px;
+    left: 40px;
 }
 
+#patientName{
+    position: relative;
+    left: 28px;
+}
+
+#paymentType{
+    position: relative;
+    
+   left: 25px;
+}
 #diagnosis{
     position: relative;
-    left: 50px;
+    left: 30px;
 }
-
-#dentist_name{
+#hospitalCharge{
+    position: relative;
+    left: 15px;
+}
+#doctorFee{
     position: relative;
     left: 38px;
 }
-
-#phone{
+#entryDate{
     position: relative;
-    left: 65px;
+    left: 38px;
 }
-
-#appointment_date{
+#Amount{
     position: relative;
-    left: 25px;
+    left: 46px;
 }
-
-#appointment_time{
-    position: relative;
-    left: 25px;
+#Subbtn{
+    background-color: rgb(108, 8, 230);
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+}
+#Pdfbtn{
+    background-color: rgb(230, 8, 130);
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+}
+#Debtn{
+    background-color: rgb(230, 8, 78);
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
 }

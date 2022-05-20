@@ -1,5 +1,7 @@
 import React,{useState} from "react";
 import axios from "axios";
+import Navbar from "../../components/NavBar/Navbar";
+import FooterS from "../../components/Footer/Footer";
 import "./Payment.css";
 import "./AddPayment.css";
 

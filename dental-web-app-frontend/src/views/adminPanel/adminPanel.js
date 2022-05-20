@@ -1,5 +1,5 @@
 import React from "react";
-
+import Footer from "../../components/Footer/Footer";
 import "./AdminPanel.css";
 import Card from "../../components/Card/Card";
 import cardDetails from "../../components/Card/cardDetails";
@@ -20,7 +20,13 @@ function Admin() {
           </div>
         );
       })}
+       <footer>
+     <Footer/>
+     </footer>
+   
     </div>
+    
+  
   );
 }
 export default Admin;
